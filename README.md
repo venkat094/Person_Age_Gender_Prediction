@@ -1,15 +1,15 @@
 # Person_Age_Gender_Prediction
 
-Assumption:-
+## Assumption:-
 
 	“No Persons are overlapping on Each other during the video feed”
 			
-The centroid tracking algorithm
+## The centroid tracking algorithm
 	1.	Accepting bounding box coordinates for each person in every frame (presumably by some person detector).
 	2.	Computing the Euclidean distance between the centroids of the input bounding boxes and the centroids of existing person 
 	3.	Updating the tracked person centroids to their new centroid locations based on the new centroid with the smallest Euclidean distance.
 
-Gender Detection Algorithm
+## Gender Detection Algorithm
 
 First, the photo is taken from the webcam stream live by the cv2 module.
 Second, we turn the image to grayscale and use the cv2 module's CascadeClassifier class to detect faces in the image
